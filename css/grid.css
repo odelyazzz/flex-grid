@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+[class^="box-"] {
+    background: linear-gradient(to bottom, rgba(150, 230, 229, 1) 0%, rgba(96, 211, 209, 1) 100%);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: grid;
+    gap: 15px;
+    height: 100vh;
+    margin: 15px;
+    grid-template-areas:
+        "Sale1 Sale1 Product1 Product2"
+        "Sale1 Sale1 Product1 Product2"
+        "Sale2 Sale2 Product1 Product2"
+        "Sale2 Sale2 Product1 Product2"
+        "Product3 Product4 Sale3 Sale3"
+        "Product3 Product4 Sale3 Sale3"
+        "Product3 Product4 Sale4 Sale4"
+        "Product3 Product4 Sale4 Sale4"
+        "Product5 Product6 Product7 Product8"
+        "Product5 Product6 Product7 Product8"
+        "Product5 Product6 Product7 Product8"
+        "Product5 Product6 Product7 Product8";
+}
+
+.box-1 {
+    grid-area: Sale1;
+    background-color: #ade7e6;
+    border: 2px solid #6cc;
+}
+
+.box-2 {
+    grid-area: Product1;
+    background-color: #b0f1ee;
+    border: 2px solid #7dd;
+}
+
+.box-3 {
+    grid-area: Product2;
+    background-color: #a8ecec;
+    border: 2px solid #5bb;
+}
+
+.box-4 {
+    grid-area: Sale2;
+    background-color: #91e4e3;
+    border: 2px solid #499;
+}
+
+.box-5 {
+    grid-area: Product3;
+    background-color: #7fd6d5;
+    border: 2px solid #388;
+}
+
+.box-6 {
+    grid-area: Product4;
+    background-color: #69c7c6;
+    border: 2px solid #277;
+}
+
+.box-7 {
+    grid-area: Sale3;
+    background-color: #53b8b7;
+    border: 2px solid #166;
+}
+
+.box-8 {
+    grid-area: Sale4;
+    background-color: #3fa9a8;
+    border: 2px solid #055;
+}
+
+.box-9 {
+    grid-area: Product5;
+    background-color: #29aaa9;
+    border: 2px solid #044;
+}
+
+.box-10 {
+    grid-area: Product6;
+    background-color: #14a5a4;
+    border: 2px solid #033;
+}
+
+.box-11 {
+    grid-area: Product7;
+    background-color: #009f9f;
+    border: 2px solid #022;
+}
+
+.box-12 {
+    grid-area: Product8;
+    background-color: #008c8c;
+    border: 2px solid #011;
+}
+
+a {
+    color: #006060;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004040;
+    font-weight: 900;
+}
